@@ -1,0 +1,68 @@
+---
+title: "Module 5 - croissance de coraux"
+author: "..."
+date: "..."
+output: html_document
+---
+
+```{r setup}
+SciViews::R
+```
+
+# Remaniement des données
+
+<!-- Importez le jeu de données à partir de la copie locale au format RDS que vous avez enregistrée dans le dossier data et assignez-le à coral. -->
+
+```{r importation}
+
+```
+
+<!-- Visualisez les variables de votre jeu de données avec la fonction `skim()`. -->
+
+```{r visu_var}
+
+```
+
+<!-- Transformez les variables localisation et species en variables facteurs. -->
+
+```{r factor}
+
+```
+
+<!-- Réalisez un tableau réduit en retirant les variables salinity, temperature et date du jeu de données. -->
+
+```{r selection}
+
+```
+
+<!-- Affichez dans votre rapport les 10 premières lignes du tableau que vous venez de réaliser 
+--->
+
+```{r tableau}
+
+```
+
+<!-- À partir du tableau que vous venez de créer, retirez les valeurs négatives présentent dans la variable gain. -->
+
+```{r filtrer}
+
+```
+
+<!-- Calculez les variables suivantes que vous ajoutez au jeu de données : 
+1) Divisez le gain de masse par le nombre de jours d'expérience.
+2) Divisez le gain de masse standardisé par le nombre de jours d'expérience et multipliez cette nouvelle variable par 100 pour obtenir la croissance en pourcent par jour. --> 
+
+```{r calculer}
+
+```
+
+<!-- Réalisez au minimum deux tables résumant les données par aquarium et par espèce. Ces tables devront contenir le nombre d'observation, la valeur minimale, la valeur maximale, la médiane et la moyenne.
+N'oubliez pas d'interpréter chacune des tables que vous aurez réalisé en maximum 5 phrases. -->
+
+```{r tab1}
+
+```
+
+```{r tab2}
+
+```
