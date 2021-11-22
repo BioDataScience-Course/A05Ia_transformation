@@ -1,8 +1,8 @@
-# Module 5 : importation et au traitement des données
+# Importation et traitement des données
 
 ## Avant-propos
 
-Les consignes sont reprises dans ce document, ainsi que sous forme de commentaires dans les différents fichiers. Elles sont susceptibles d'évoluer. N'hésitez pas à vérifier le lien suivant afin de voir si des modifications n'y ont pas été apportées : https://github.com/BioDataScience-Course/A05Ga_transformation.
+Les consignes sont reprises dans ce document, ainsi que sous forme de commentaires dans les différents fichiers. Elles sont susceptibles d'évoluer. N'hésitez pas à vérifier le lien suivant afin de voir si des modifications n'y ont pas été apportées : https://github.com/BioDataScience-Course/A05Ia_transformation.
 
 ## Objectifs
 
@@ -24,21 +24,22 @@ Ceci est un projet **individuel**, **court** et **cadré** qui doit être **term
 https://docs.google.com/spreadsheets/d/e/2PACX-1vSxqegwJVjO0PxIs7mObr0syeYwNdpvd25AWUoWkwocQexYUqQUK0hC57NwsypQQUDnsJLiR-hxzSFA/pub?output=csv
 ```
 
-- Enregistrez une copie locale du jeu de données dans le dossier `data` que vous allez créer préalablement pour l'occasion, toujours dans `coral_import.R`.
+- Ajoutez ensuite le code nécessaire pour enregistrez une copie locale de ce jeu de données au format natif de R (RDS) dans le dossier `data` que vous allez créer préalablement pour l'occasion.
 
 - Complétez le fichier `coral.Rmd` du dossier `docs` en suivant les instructions qui s'y trouvent.
 
-Le jeu de données reprend des mesures de croissance de différentes espèces de coraux. La masse est mesurée en t0 puis une seconde fois après 7 jours de suivi.
+Le jeu de données reprend des mesures de croissance de différentes espèces de coraux. La masse des coraux est mesurée au début de l'expérience (temps t0) puis une seconde fois après 7 jours (temps t7). Les variables du jeu de données sont :
 
-- localisation : aquarium dans lequel la bouture est placée. Les installations sont composées de deux unités (A et B)et de plusieurs bacs par unité.
-species : espèce étudiée
-- id : code de l'individu
-- salinity : salinité mesurée en t7
-- temperature : température mesurée en t7
-- date : date de la mesure en t7
-- time : nombre de jour entre la mesure initiale et finale
-- gain : gain de masse en g entre le jour t0 et t7
-- gain_std : gain/masse initiale
+- **localisation :** aquarium dans lequel la bouture de corail est placée. Les installations sont composées de deux unités indépendantes (A et B) et de plusieurs aquariums par unité, relés entre eux,
+- **species :** espèce étudiée,
+- **id :** code de la bouture de corail,
+- **salinity :** salinité mesurée en t7, grandeur sans unité,
+- **temperature :** température mesurée dans l'eau en t7, en °C,
+- **date :** date de la mesure en t7,
+- **time :** nombre de jour écoulés entre la mesure initiale et finale,
+- **gain :** gain de masse entre t0 et t7, en g,
+- **gain_std :** gain/masse initiale, sans unité.
+
 
 ### Partie II : biometry
 

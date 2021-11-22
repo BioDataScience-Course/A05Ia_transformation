@@ -1,7 +1,7 @@
 ---
-title: "Module 5 - croissance de coraux"
-author: "..."
-date: "..."
+title: "Croissance de coraux"
+author: "___"
+date: "___"
 output: html_document
 ---
 
@@ -9,60 +9,66 @@ output: html_document
 SciViews::R
 ```
 
-# Remaniement des données
+## Importation des données
 
-<!-- Importez le jeu de données à partir de la copie locale au format RDS que vous avez enregistrée dans le dossier data et assignez-le à coral. -->
+<!--% Importez le jeu de données à partir de la copie locale au format RDS que vous avez enregistrée dans le dossier data et assignez-le à la variable `coral`. -->
 
-```{r importation}
-
-```
-
-<!-- Visualisez les variables de votre jeu de données avec la fonction `skim()`. -->
-
-```{r visu_var}
+```{r import}
 
 ```
 
-<!-- Transformez les variables localisation et species en variables facteurs. -->
+<!--% Explorez les variables de votre jeu de données avec la fonction `skim()`. -->
+
+```{r explo}
+
+```
+
+## Remaniement des données
+
+<!--% Transformez les variables `localisation` et `species` en variables facteurs. -->
 
 ```{r factor}
 
 ```
 
-<!-- Réalisez un tableau réduit en retirant les variables salinity, temperature et date du jeu de données. -->
+<!--% Réalisez un tableau réduit en retirant les variables `salinity`, `temperature` et `date` du jeu de données et placez ce tableau réduit dans la variable `coral2`. -->
 
 ```{r selection}
 
 ```
 
-<!-- Affichez dans votre rapport les 10 premières lignes du tableau que vous venez de réaliser 
---->
+<!--% Affichez dans votre rapport les 10 premières lignes du tableau `coral2` -->
 
 ```{r tableau}
 
 ```
 
-<!-- À partir du tableau que vous venez de créer, retirez les valeurs négatives présentent dans la variable gain. -->
+<!--% À partir de `coral2`, retirez les individus qui contiennent des valeurs négatives de `gain`. -->
 
-```{r filtrer}
-
-```
-
-<!-- Calculez les variables suivantes que vous ajoutez au jeu de données : 
-1) Divisez le gain de masse par le nombre de jours d'expérience.
-2) Divisez le gain de masse standardisé par le nombre de jours d'expérience et multipliez cette nouvelle variable par 100 pour obtenir la croissance en pourcent par jour. --> 
-
-```{r calculer}
+```{r gain_positif}
 
 ```
 
-<!-- Réalisez au minimum deux tables résumant les données par aquarium et par espèce. Ces tables devront contenir le nombre d'observation, la valeur minimale, la valeur maximale, la médiane et la moyenne.
-N'oubliez pas d'interpréter chacune des tables que vous aurez réalisé en maximum 5 phrases. -->
+<!--% Calculez les variables suivantes en une seule étape et ajoutez-les à `coral2` --> 
+<!--% 1) Divisez le gain par le nombre de jours d'expérience, en g/j dans `gain_j`. -->
+<!--% 2) Divisez le gain standardisé par le nombre de jours et multipliez cette nouvelle variable par 100 pour obtenir la croissance en %/j dans `gain_std_j`. --> 
+
+```{r calcul}
+
+```
+
+## Description des données
+
+<!--% Réalisez au minimum deux tables résumant les données par aquarium et par espèce. Ces tables devront contenir le nombre d'observation, la valeur minimale, la valeur maximale, la médiane et la moyenne. Interpréter ces tables en maximum 5 phrases. -->
 
 ```{r tab1}
 
 ```
 
+...interprétation...
+
 ```{r tab2}
 
 ```
+
+...interprétation...
