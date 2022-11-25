@@ -24,7 +24,7 @@ Le jeu de données reprend des mesures de croissance de différentes espèces de
 -   **salinity :** salinité mesurée en t7, grandeur sans unité,
 -   **temperature :** température mesurée dans l'eau en t7, en °C,
 -   **date :** date de la mesure en t7,
--   **time :** nombre de jour écoulés entre la mesure initiale et finale,
+-   **time :** nombre de jours écoulés entre la mesure initiale et finale,
 -   **gain :** gain de masse entre t0 et t7, en g,
 -   **gain_std :** gain/masse initiale, sans unité.
 

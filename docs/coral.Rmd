@@ -11,13 +11,13 @@ SciViews::R(lang = "fr")
 
 ## Introduction
 
-Les mésocosmes sont des récifs artificiels qui permettent d'étudier entre autres les coraux dans des conditions contrôlées. La croissance de deux espèces de coraux sont étudiés.
+Les mésocosmes sont des récifs artificiels qui permettent d'étudier entre autres les coraux dans des conditions contrôlées. La croissance de deux espèces de coraux est étudiée.
 
 ## Analyse
 
 ### Importation des données
 
-<!--% Importez le jeu de données depuis le lien fournit dans le README et assignez-le à la variable `coral`. -->
+<!--% Importez le jeu de données depuis le lien fourni dans le README et assignez-le à la variable `coral`. -->
 
 ```{r import}
 # Création du dossier data/
@@ -26,7 +26,7 @@ fs::dir_create("../data/")
 coral <- read$csv("___", cache_file = "../data/corals.csv") 
 ```
 
-<!--# Notez que l'argument `cache_file=` permet de sauver localement le jeu de données dans le dossier data/. Lors des prochaines utilisation de la fonction read(), le tableau sera chargé depuis la version locale.-->
+<!--# Notez que l'argument `cache_file=` permet de sauver localement le jeu de données dans le dossier data/. Lors des prochaines utilisations de la fonction read(), le tableau sera chargé depuis la version locale..-->
 
 <!--% Explorez les variables de votre jeu de données avec la fonction `skim()` du package {skimr}. -->
 
@@ -56,13 +56,13 @@ coral <- read$csv("___", cache_file = "../data/corals.csv")
 
 ### Description des données
 
-<!--% Réalisez un  tableau résumant les données par aquarium et par espèce. Ce tableau doit contenir le nombre d'observation, la valeur minimale, la valeur maximale, la médiane et la moyenne.-->
+<!--% Réalisez un  tableau résumant les données par aquarium et par espèce. Ce tableau doit contenir le nombre d'observations, la valeur minimale, la valeur maximale, la médiane et la moyenne..-->
 
 ```{r tab}
 
 ```
 
-<!-- Interprétez le tableau ci-dessus en maximum 3 phrases-->
+<!-- Interprétez le tableau ci-dessus en maximum 3 phrases.s-->
 
 <!-- BONUS : Réalisez un graphique pertinent afin de décrire les données.-->
 
@@ -70,4 +70,4 @@ coral <- read$csv("___", cache_file = "../data/corals.csv")
 
 ```
 
-<!-- BONUS : Interprétez le graphique ci-dessus en maximum 3 phrases-->
+<!-- BONUS : Interprétez le graphique ci-dessus en maximum 3 phrases.s-->
