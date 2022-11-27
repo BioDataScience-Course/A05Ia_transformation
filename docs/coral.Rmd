@@ -26,7 +26,7 @@ fs::dir_create("../data/")
 coral <- read$csv("___", cache_file = "../data/corals.csv") 
 ```
 
-<!--# Notez que l'argument `cache_file=` permet de sauver localement le jeu de données dans le dossier data/. Lors des prochaines utilisations de la fonction read(), le tableau sera chargé depuis la version locale..-->
+<!--# Notez que l'argument `cache_file=` permet de sauver localement le jeu de données dans le dossier data/. Lors des prochaines utilisations de la fonction read(), le tableau sera chargé depuis la version locale. -->
 
 <!--% Explorez les variables de votre jeu de données avec la fonction `skim()` du package {skimr}. -->
 
@@ -36,7 +36,7 @@ coral <- read$csv("___", cache_file = "../data/corals.csv")
 
 ### Remaniement des données
 
-<!--% Calculez les variables suivantes en une seule étape et ajoutez-les à `coral` -->
+<!--% Calculez les variables suivantes en une seule étape et ajoutez-les à `coral`/ -->
 
 <!--% 1) Divisez le gain par le nombre de jours d'expérience, en g/j dans `gain_j`. -->
 
@@ -48,7 +48,7 @@ coral <- read$csv("___", cache_file = "../data/corals.csv")
 
 ```
 
-<!--% En utilisant le chainage des opérations. Réalisez un tableau réduit en retirant les variables `time`, `temperature` et `date`. Retirez également les individus ayant des valeurs de `gain_std` strictement inférieur à -0.1. Assignez ce résultat à coral2-->
+<!--% En utilisant le chainage des opérations. Réalisez un tableau réduit en retirant les variables `time`, `temperature` et `date`. Retirez également les individus ayant des valeurs de `gain_std` strictement inférieur à -0.1. Assignez ce résultat à coral2. -->
 
 ```{r selection}
 
@@ -56,18 +56,18 @@ coral <- read$csv("___", cache_file = "../data/corals.csv")
 
 ### Description des données
 
-<!--% Réalisez un  tableau résumant les données par aquarium et par espèce. Ce tableau doit contenir le nombre d'observations, la valeur minimale, la valeur maximale, la médiane et la moyenne..-->
+<!--% Réalisez un  tableau résumant les données par aquarium et par espèce. Ce tableau doit contenir le nombre d'observations, la valeur minimale, la valeur maximale, la médiane et la moyenne. -->
 
 ```{r tab}
 
 ```
 
-<!-- Interprétez le tableau ci-dessus en maximum 3 phrases.s-->
+<!-- Interprétez le tableau ci-dessus en maximum 3 phrases. -->
 
-<!-- BONUS : Réalisez un graphique pertinent afin de décrire les données.-->
+<!-- BONUS : Réalisez un graphique pertinent afin de décrire les données. -->
 
 ```{r plot_bonus}
 
 ```
 
-<!-- BONUS : Interprétez le graphique ci-dessus en maximum 3 phrases.s-->
+<!-- BONUS : Interprétez le graphique ci-dessus en maximum 3 phrases. -->
