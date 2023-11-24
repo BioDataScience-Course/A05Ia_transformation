@@ -1,4 +1,8 @@
-# Importation et traitement des données
+# Importation et remaniement des données
+
+## Avant-propos
+
+Ce projet nécessite d'avoir assimilé l'ensemble des notions du cinquième module du cours de science des données biologiques 1. Il correspond au dépôt GitHub <https://github.com/BioDataScience-Course/A05Ia_transformation>. Il est distribué sous licence [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Objectifs
 
@@ -12,7 +16,9 @@ Ceci est un projet **individuel**, **court** et **cadré**. Il permettra de dém
 
 ## Consignes
 
-Complétez le fichier `coral.Rmd` du dossier `docs` en suivant les instructions qui s'y trouvent. Le tableau de données est disponible via le lien suivant :
+### Croissance de coraux en mésocosme
+
+Complétez le fichier `coral.qmd` en suivant les instructions qui s'y trouvent. Le tableau de données est disponible via le lien suivant :
 
 > <https://filedn.com/lzGVgfOGxb6mHFQcRn9ueUb/coral/corals.csv>
 
@@ -28,5 +34,6 @@ Le jeu de données reprend des mesures de croissance de différentes espèces de
 -   **gain :** gain de masse entre t0 et t7, en g,
 -   **gain_std :** gain/masse initiale, sans unité.
 
-Le template associé à ce projet est le suivant : <https://github.com/BioDataScience-Course/A05Ia_transformation>
+### Cas de diabète chez des femmes PIMA
 
+Complétez le fichier `pima.qmd`. Le jeu de données employé provient du package MASS. Vous avez à votre disposition une page d'aide pour mieux appréhender les variables de ce dernier.
