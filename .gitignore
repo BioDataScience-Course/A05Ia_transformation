@@ -46,6 +46,9 @@ _bookdown_files/
 .quarto/
 _site/
 
+# Temporary versions of data
+data/cache/
+
 # Compilation results
 tests/results/
 

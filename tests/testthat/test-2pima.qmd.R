@@ -104,20 +104,20 @@ test_that("Chunks 'pbmi_cat' : Découpage en classe de la variable bmi", {
 })
 
 test_that("Chunks 'pcount' & 'pcountcomment' : graphique en barres des catégories d'IMC", {
-    expect_true(is_identical_to_ref("pcount"))
-    # Le graphique en barres produit par 'pcount' n'est pas celui attendu
-    # Avez-vous bien employé des aplats de couleurs pour le diabète ? Lisez bien
-    # la consigne et corrigez l'erreur, puis refaites un 'Rendu' du document
-    # avant de retester.
+  expect_true(is_identical_to_ref("pcount"))
+  # Le graphique en barres produit par 'pcount' n'est pas celui attendu
+  # Avez-vous bien employé des aplats de couleurs pour le diabète ? Lisez bien
+  # la consigne et corrigez l'erreur, puis refaites un 'Rendu' du document
+  # avant de retester.
 
-    expect_true(is_identical_to_ref("pcountcomment"))
-    # L'interprétation du graphique en barres est (partiellement) fausse
-    # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
-    # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
-    # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
-    # Assurez-vous de bien comprendre ce qui est coché ou pas : vous n'aurez plus
-    # cette aide plus tard dans le travail de groupe ou les interrogations !
-  })
+  expect_true(is_identical_to_ref("pcountcomment"))
+  # L'interprétation du graphique en barres est (partiellement) fausse
+  # Vous devez cochez les phrases qui décrivent le graphique d'un 'x' entre les
+  # crochets [] -> [x]. Ensuite, vous devez recompiler la version HTML du
+  # bloc-notes (bouton 'Rendu') sans erreur pour réactualiser les résultats.
+  # Assurez-vous de bien comprendre ce qui est coché ou pas : vous n'aurez plus
+  # cette aide plus tard dans le travail de groupe ou les interrogations !
+})
 
 test_that("Chunks 'ccount' : Tableau résumé de dénombrements des individus", {
   expect_true(is_identical_to_ref("ccount", "names"))
@@ -148,7 +148,8 @@ test_that("Chunks 'psub': réduction de la taille du tableau", {
 test_that("Chunks 'ptab' : Tableau résumé pour les des personnes diabétiques en surpoids ou obèses", {
   expect_true(is_identical_to_ref("ptab", "names"))
   # Les colonnes dans le tableau `pima_tab` ne sont pas celles attendues
-  # Avez-vous bien respecté les noms des colonnes comme demandé dans la consignes.
+  # Avez-vous bien respecté les noms des colonnes comme demandé dans la
+  # consignes.
 
   expect_true(is_identical_to_ref("ptab", "classes"))
   # La nature des variables (classe) dans le tableau `pima_tab` est incorrecte
@@ -161,7 +162,7 @@ test_that("Chunks 'ptab' : Tableau résumé pour les des personnes diabétiques 
 
 test_that("Les commentaires sont-ils complétés pour le tableau résumé 'ptab'", {
   expect_true(!(rmd_select(pima, by_section("Analyses")) |>
-      as_document() |> grepl("^- +\\.+ *$", x = _) |> any()))
+    as_document() |> grepl("^- +\\.+ *$", x = _) |> any()))
   # Vous devez compléter la liste d'observations sous le tableau résumé obtenu
   # au chunk 'ptab'. Si le test échoue, ce n'est pas encore fait.
 })
