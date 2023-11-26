@@ -83,16 +83,12 @@ select_answer(r"-{
 [] -  La variable `n_pregnant` est reconnue dans R comme une variable **integer**. Le nombre d'enfant ne peut prendre que des valeurs entières.}-")
 ```
 
-<!-- Définissez une nouvelle colonne `bmi_cat` dans le tableau `pima` avec la division en classe de la variable `bmi` avec les niveaux suivants : "sous-poids" strictement inférieur à 18.5, "poids normal" de 18.5 à 25 (non inclus), "surpoids" de 25 à 30 (non inclus), et "obèse" au-dessus de 30 (compris). Par exemple, une personne à IMC 25 est donc en surpoids. Cette nouvelle variable doit être de type facteur ordonné. Complétez l'instruction et n'en utilisez pas d'autre. -->
+<!-- Définissez une nouvelle colonne `bmi_cat` dans le tableau `pima` avec la division en classe de la variable `bmi` avec les niveaux suivants : "sous-poids" strictement inférieur à 18.5, "poids normal" de 18.5 à 25 (non inclus), "surpoids" de 25 à 30 (non inclus), et "obèse" au-dessus de 30 (compris). Par exemple, une personne à IMC 25 est donc en surpoids. Cette nouvelle variable doit être de type facteur ordonné. -->
+
+<!--# Un addin existe dans RStudio pour vous aider à faire ces catégories. -->
 
 ```{r pbmi_cat, record='RODFS', object='pima'}
-pima <- ___(___, 
-  ___ = case_when(
-    ___,
-    ___,
-    ___,
-    ___) |>
-    as.___(levels = c(___)))
+___
 ```
 
 <!--% Réalisez un graphique qui permet de dénombrer les quatre niveaux de la variable `bmi_cat` avec des aplats de couleurs pour différencier les personnes diabétiques ou non. Éliminez les valeurs manquantes pour la variable `bmi_cat` uniquement. Assurez-vous que le label en X soit "Catégorie d'IMC" et que le label en Y soit "Effectifs". -->
@@ -113,7 +109,7 @@ select_answer(r"-{
 [] - La proportion de diabétiques diminue dans les catégories d'IMC du sous-poids vers l'obésité.}-")
 ```
 
-<!-- Éliminez les individus en sous-poids et normaux selon l'IMC. Nommez votre nouveau tableau `pima_sub` . Éliminez également les niveaux inutiles de la variable `bmi_cat`. -->
+<!-- Éliminez les individus en sous-poids et normaux selon l'IMC. Nommez votre nouveau tableau `pima_sub`. Éliminez également les niveaux inutiles de la variable `bmi_cat`. -->
 
 ```{r psub, record='RODFS', object='pima_sub'}
 ___
