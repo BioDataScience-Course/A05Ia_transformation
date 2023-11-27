@@ -121,7 +121,7 @@ coral %>.%
   coral
 ```
 
-<!--% Réalisez un  tableau résumant les données par aquarium et par espèce. Ce tableau doit contenir la valeur minimale, la moyenne, la médiane, la valeur maximale et le nombre d'observations. Nommez les colonnes `minimum`, `moyenne`, `médiane`, `maximum` et `n`. Assignez vos résultats à coral_tab. Formatez votre tableau à l'aide de tabularise().-->
+<!--% Réalisez un  tableau résumant les données par aquarium et par espèce. Ce tableau doit contenir la valeur minimale, la moyenne, la médiane, la valeur maximale et le nombre d'observations pour la variable gain_std_j. Nommez les colonnes `minimum`, `moyenne`, `médiane`, `maximum` et `n`. Assignez vos résultats à coral_tab. Formatez votre tableau à l'aide de tabularise().-->
 
 ```{r ctab, record='RODFS', object='coral_tab'}
 coral %>.%
