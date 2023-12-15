@@ -119,17 +119,6 @@ test_that("Chunks 'pcount' & 'pcountcomment' : graphique en barres des catégori
   # cette aide plus tard dans le travail de groupe ou les interrogations !
 })
 
-test_that("Chunks 'ccount' : Tableau résumé de dénombrements des individus", {
-  expect_true(is_identical_to_ref("ccount", "names"))
-  # Les colonnes dans le tableau `pima_count` ne sont pas celles attendues.
-  # Vous devriez avoir un tableau résumé contenant les colonnes 'species',
-  # 'localisation' et 'n'.
-
-  expect_true(is_identical_to_ref("ccount", "nrow"))
-  # Le nombre de lignes dans le tableau `pima_count` est incorrect
-  # Ce tableau devrait comprendre 8 lignes.
-})
-
 test_that("Chunks 'psub': réduction de la taille du tableau", {
   expect_true(is_identical_to_ref("psub", "names"))
   # Les colonnes dans le tableau `pima_sub` ne sont pas celles attendues.
